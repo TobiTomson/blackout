@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackout</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media all and (display-mode: fullscreen) {
+            #toggleFullscreen {
+                display: none;
+            }
+        }
+
+        #toggleFullscreen {
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            border-radius: 16px;
+        }
+    </style>
+    <script>
+        (function () {
+            let buttonVisible = true;
+
+        })();
+    </script>
+</head>
+
+<body>
+    <button id="toggleFullscreen" onclick="document.body.requestFullscreen()">Go fullscreen</button>
+</body>
+
+</html>
